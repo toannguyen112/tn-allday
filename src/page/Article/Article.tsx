@@ -32,6 +32,7 @@ const Article = () => {
       : console.log("error");
   };
 
+  
   const fetchData = async () => {
     try {
       const response = await axios.get(
