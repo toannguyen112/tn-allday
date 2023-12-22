@@ -1,0 +1,555 @@
+@import "/src/common/responsive.scss";
+
+body {
+    background-color: #121212;
+
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    // height: 100vh;
+}
+
+.text-45 {
+    color: #F4F4F4;
+    font-family: Syne;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 54px;
+    text-transform: uppercase;
+
+    @include respond-to(phone) {
+        font-size: 14px !important;
+        line-height: normal !important;
+        font-weight: 700;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 16px !important;
+        line-height: normal !important;
+        font-weight: 700;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 25px !important;
+        line-height: normal !important;
+        font-weight: 700;
+    }
+
+    @include respond-to(laptop) {
+        font-size: 23px !important;
+        line-height: normal !important;
+        font-weight: 800;
+    }
+}
+
+.text-18 {
+    color: #E6E6E6;
+    font-family: Syne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+    @include respond-to(phone) {
+        font-size: 14px !important;
+        line-height: 28px !important;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 14px !important;
+        line-height: 28px !important;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: 28px !important;
+    }
+
+}
+
+.text-18-500 {
+    color: #E6E6E6;
+    font-family: Syne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+
+    @include respond-to(laptop) {
+        font-size: 10px !important;
+        line-height: 30px !important;
+    }
+
+    @media (min-width: 1920px) {
+        font-size: 18px !important;
+    }
+}
+
+.text-18-30 {
+    color: #E6E6E6;
+    font-family: Syne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+    /* 166.667% */
+    @include respond-to(phone) {
+        font-size: 11px !important;
+        line-height: 30px !important;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 16px !important;
+        line-height: 30px !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: 30px !important;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 18px !important;
+        line-height: 30px !important;
+
+    }
+}
+
+
+.text-40-600 {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
+    color: #F6CC70;
+
+    @include respond-to(phone) {
+        font-size: 15px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 15px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 30px !important;
+        line-height: normal !important;
+    }
+}
+
+.text-40 {
+    font-family: Syne;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E6E6E6;
+    text-transform: uppercase;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+        font-weight: 600;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 21px !important;
+        line-height: normal !important;
+        font-weight: 600;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 22px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(laptop) {
+        font-size: 28px !important;
+        line-height: normal !important;
+    }
+
+
+}
+
+.text-60 {
+    text-align: center;
+    font-family: Syne;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+
+    @include respond-to(phone) {
+        font-size: 27px !important;
+        line-height: normal !important;
+        font-weight: 700;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 30px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 35px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 50px !important;
+        line-height: normal !important;
+
+    }
+}
+
+.text-24-500 {
+    color: #EFBB70;
+    font-family: Syne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+    /* 125% */
+    @include respond-to(phone) {
+        font-size: 10px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 10px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+}
+
+.text-24 {
+    color: #FFF;
+    font-family: Syne;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+
+    @include respond-to(tablet) {
+        font-size: 20px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(laptop) {
+        font-size: 24px !important;
+        line-height: normal !important;
+    }
+}
+
+.text-26 {
+    font-family: Syne;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E6E6E6;
+
+    @include respond-to(phone) {
+        font-size: 14px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 18px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 20px !important;
+        line-height: normal !important;
+
+    }
+}
+
+.text-20-400 {
+    text-align: center;
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #FFFFFF;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 12px !important;
+        line-height: normal !important;
+
+    }
+
+}
+
+.text-20 {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: lowercase;
+    color: #F5F7FE;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 12px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 14px !important;
+        line-height: normal !important;
+
+    }
+}
+
+.text-28 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+
+    @include respond-to(phone) {
+        font-size: 16px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 16px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 22px !important;
+        line-height: normal !important;
+
+    }
+}
+
+.text-16-800 {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 25px;
+    color: #D4A555;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+        font-weight: 700;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: normal !important;
+        // font-weight: 700;
+
+    }
+}
+
+.text-14-400 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #E6E6E6;
+
+    @include respond-to(phone) {
+        font-size: 10px !important;
+        line-height: 16px !important;
+    }
+}
+
+.text-16-600 {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #D4A555;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(laptop) {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+}
+
+.text-16 {
+    font-family: Syne;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #E6E6E6;
+
+    @include respond-to(phone) {
+        font-size: 12px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(tablet) {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+}
+
+.text-30 {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+
+    @include respond-to(phone) {
+        font-size: 16px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 22px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 30px !important;
+        line-height: normal !important;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 26px !important;
+        line-height: normal !important;
+        font-weight: 500;
+
+    }
+}
+
+.text-50 {
+    font-family: Syne;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F6CC70;
+
+    @include respond-to(phone) {
+        font-size: 25px !important;
+        line-height: normal !important;
+        font-weight: 800;
+
+    }
+
+    @include respond-to(phoneLandscape) {
+        font-size: 27px !important;
+        line-height: normal !important;
+        font-weight: 800;
+
+    }
+
+    @include respond-to(tablet) {
+        font-size: 30px !important;
+        line-height: normal !important;
+        font-weight: 800;
+
+    }
+
+    @include respond-to(laptop) {
+        font-size: 40px !important;
+        line-height: normal !important;
+        font-weight: 800;
+
+    }
+}
+
+.text-180 {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 16.667% */
+    letter-spacing: 9px;
+
+    @include respond-to(tablet) {
+        font-size: 59px !important;
+        line-height: normal !important;
+    }
+
+    @include respond-to(laptop) {
+        font-size: 85px !important;
+        line-height: normal !important;
+    }
+
+    @media (min-width: 1920px) {
+        margin-top: 80px !important;
+        font-size: 180px !important;
+    }
+}

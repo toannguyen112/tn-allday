@@ -1,0 +1,649 @@
+@import "/src/common/responsive.scss";
+
+.ecosystem-section {
+    margin-top: 112px;
+
+    .line {
+        margin-bottom: 50px;
+    }
+
+    .container {
+        // width: 90%;
+        margin: 0 auto;
+
+        .title-ecosystem {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .group-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+
+            .card-ecosystem {
+                width: 100%;
+                height: 270px;
+                position: relative;
+                cursor: pointer;
+                margin: 10px 20px;
+
+                @media (min-width:1588px) {
+                    margin: 20px 40px;
+                }
+
+                @media (min-width:1855px) {
+                    margin: 30px 50px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .content-card {
+                    position: absolute;
+                    top: 20px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    z-index: 1;
+                    width: 100%;
+
+                    .content {
+                        width: 100%;
+
+                        .text-20 {
+                            margin-top: -5px;
+                        }
+                    }
+
+                    .banner-icon {
+                        width: 80px;
+                        height: 80px;
+                        margin: 20px auto;
+                    }
+
+                    .dotted-line {
+                        margin: 15px auto;
+                        border-top: 1px dashed #FFFFFF;
+                        width: 140px;
+                        height: 0;
+                        background: linear-gradient(90deg, #000 10px, transparent 10px, transparent 20px);
+                    }
+
+                    .group-button {
+                        display: flex;
+                        align-items: start;
+                        justify-content: center;
+                        margin-top: 20px;
+                        width: 80%;
+                        margin: 0 auto;
+                        gap: 20px;
+
+                        .icon {
+                            width: 30px;
+                            height: 30px;
+                            animation: fadeIn 0.5s ease-in-out;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.purple {
+    background: linear-gradient(96deg, #FFA4E4 4.95%, #9C2BBA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.startknet {
+    background: linear-gradient(96deg, #323189 4.95%, #EE592B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.base {
+    background: linear-gradient(96deg, #F5F7FE 4.95%, #2355D9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.scroll {
+    background: linear-gradient(87deg, #E4D2BA 5.81%, #BA976B 97.45%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.starknet {
+    background: linear-gradient(96deg, #323189 4.95%, #EE592B 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ethereum {
+    background: linear-gradient(93deg, #C1FDFF 2.44%, #DFB7FF 98.7%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.solana {
+    background: linear-gradient(93deg, #01FFC0 2.44%, #D28AFE 98.7%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.optimism {
+    background: linear-gradient(273deg, #F10620 1.3%, #FFB1BA 97.56%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cosmos {
+    background: linear-gradient(93deg, #01FFC0 2.44%, #3A1BD3 98.7%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bsc {
+    background: linear-gradient(95deg, #FFEC33 2.69%, #FBB040 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.zksync {
+    background: linear-gradient(273deg, #685EC0 10.3%, #FEFEFF 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.arbitrum {
+    background: linear-gradient(273deg, #016FEA 10.3%, #01C7FB 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sui {
+    background: linear-gradient(95deg, #CEEBF9 2.69%, #3F9FCB 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.web {
+    background: linear-gradient(95deg, #43E6FF 2.69%, #5861FF 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.brc {
+    background: linear-gradient(273deg, #8A540D 10.3%, #FD9A18 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mantle {
+    background: linear-gradient(273deg, #68C6DE 10.3%, #9BFFEC 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gamefi {
+    background: linear-gradient(273deg, #FF595E 1.3%, #FFB1BA 97.56%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metaverse {
+    background: linear-gradient(273deg, #9F82DD 10.3%, #F5BEDE 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dao {
+    background: linear-gradient(95deg, #71F4FF 2.69%, #5E38FF 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.web {
+    background: linear-gradient(95deg, #43E6FF 2.69%, #5861FF 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.layer {
+    background: linear-gradient(273deg, #AE1DBE 10.3%, #FEFEFE 97.32%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nft {
+    background: linear-gradient(95deg, #FDFDFD 2.69%, #090909 97.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@include respond-to(phone) {
+    .ecosystem-section {
+        margin-top: 0px;
+
+        .line {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 100%;
+
+            .title-ecosystem {
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .group-content {
+                margin-top: 20px;
+                width: 90%;
+                margin: 20px auto 0 auto;
+                justify-content: space-evenly;
+                gap: 5px;
+
+                .card-ecosystem {
+                    width: 100%;
+
+                    height: 200px;
+                    position: relative;
+                    margin: 0;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        // height: 100%;
+                    }
+
+                    .content-card {
+                        position: absolute;
+                        top: 15px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        z-index: 1;
+                        width: 100%;
+
+                        .content {
+                            width: 100%;
+
+                            .text-20 {
+                                margin-top: -5px;
+                            }
+                        }
+
+                        .banner-icon {
+                            width: 70px;
+                            height: 70px;
+                            margin: 10px auto;
+                        }
+
+                        .dotted-line {
+                            margin: 10px auto;
+                            border-top: 1px dashed #FFFFFF;
+                            width: 120px;
+                            height: 0;
+                            background: linear-gradient(90deg, #000 10px, transparent 10px, transparent 20px);
+                        }
+
+                        .group-button {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            margin-top: 10px;
+                            width: 75%;
+                            margin: 0 auto;
+                            gap: 10px;
+
+                            .icon {
+                                width: 25px;
+                                height: 25px;
+                                animation: fadeIn 0.5s ease-in-out;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(phoneLandscape) {
+    .ecosystem-section {
+        margin-top: 0px;
+
+        .line {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            padding-bottom: 20px;
+
+            .title-ecosystem {
+                width: 90%;
+            }
+
+            .group-content {
+                margin-top: 20px;
+                gap: 0px;
+                justify-content: space-evenly;
+                width: 100%;
+
+                .card-ecosystem {
+                    width: 100%;
+                    height: 220px;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .content-card {
+                        position: absolute;
+                        top: 25px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        z-index: 1;
+                        width: 100%;
+
+                        .content {
+                            width: 100%;
+
+                            .text-20 {
+                                margin-top: -5px;
+                            }
+                        }
+
+                        .banner-icon {
+                            width: 70px;
+                            height: 70px;
+                            margin: 10px auto;
+                        }
+
+                        .dotted-line {
+                            margin: 10px auto;
+                            border-top: 1px dashed #FFFFFF;
+                            width: 120px;
+                            height: 0;
+                            background: linear-gradient(90deg, #000 10px, transparent 10px, transparent 20px);
+                        }
+
+                        .group-button {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            margin-top: 10px;
+                            width: 75%;
+                            margin: 0 auto;
+                            gap: 10px;
+
+                            .icon {
+                                width: 30px;
+                                height: 30px;
+                                animation: fadeIn 0.5s ease-in-out;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(tablet) {
+    .ecosystem-section {
+        margin-top: 0px;
+
+        .line {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            padding-bottom: 20px;
+
+            .title-ecosystem {
+                width: 90%;
+            }
+
+            .group-content {
+                margin-top: 20px;
+                gap: 0px;
+                justify-content: space-evenly;
+                width: 100%;
+
+                .card-ecosystem {
+                    width: 100%;
+                    height: 240px;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .content-card {
+                        position: absolute;
+                        top: 25px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        z-index: 1;
+                        width: 100%;
+
+                        .content {
+                            width: 100%;
+
+                            .text-20 {
+                                margin-top: -5px;
+                            }
+                        }
+
+                        .banner-icon {
+                            width: 70px;
+                            height: 70px;
+                            margin: 10px auto;
+                        }
+
+                        .dotted-line {
+                            margin: 10px auto;
+                            border-top: 1px dashed #FFFFFF;
+                            width: 120px;
+                            height: 0;
+                            background: linear-gradient(90deg, #000 10px, transparent 10px, transparent 20px);
+                        }
+
+                        .group-button {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            margin-top: 10px;
+                            width: 75%;
+                            margin: 0 auto;
+                            gap: 10px;
+
+                            .icon {
+                                width: 30px;
+                                height: 30px;
+                                animation: fadeIn 0.5s ease-in-out;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(laptop) {
+    .ecosystem-section {
+        margin-top: 0px;
+
+        .line {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            padding-bottom: 20px;
+
+            .title-ecosystem {
+                width: 100%;
+            }
+
+            .group-content {
+                margin-top: 20px;
+                gap: 0px;
+                justify-content: space-evenly;
+                width: 100%;
+
+                .card-ecosystem {
+                    width: 100%;
+                    height: 250px;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .content-card {
+                        position: absolute;
+                        top: 20px;
+                        left: 50%;
+                        transform: translate(-50%);
+                        z-index: 1;
+                        width: 100%;
+
+                        .content {
+                            width: 100%;
+
+                            .text-20 {
+                                margin-top: -5px;
+                            }
+                        }
+
+                        .banner-icon {
+                            width: 70px;
+                            height: 70px;
+                            margin: 10px auto;
+                        }
+
+                        .dotted-line {
+                            margin: 15px auto;
+                            border-top: 1px dashed #FFFFFF;
+                            width: 140px;
+                            height: 0;
+                            background: linear-gradient(90deg, #000 10px, transparent 10px, transparent 20px);
+                        }
+
+                        .group-button {
+                            display: flex;
+                            align-items: start;
+                            justify-content: center;
+                            margin-top: 10px;
+                            width: 80%;
+                            margin: 0 auto;
+                            gap: 10px;
+
+                            .icon {
+                                width: 35px;
+                                height: 35px;
+                                animation: fadeIn 0.5s ease-in-out;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fade-in 0.5s ease-in-out;
+}
+
+.fade-out {
+    animation: fade-out 0.5s ease-in-out;
+}

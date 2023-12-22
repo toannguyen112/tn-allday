@@ -1,0 +1,28 @@
+/* @font-face {
+  font-family: "Syne";
+  src: url("/fonts/Syne/Syne-Regular.ttf") ;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Regular.ttf") ;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") ;
+} */
+
+body {
+  margin: 0;
+  font-family: "Syne","Montserrat","Poppins"
+
+}
+
+
+
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */

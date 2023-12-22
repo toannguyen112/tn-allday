@@ -1,0 +1,709 @@
+@import "/src/common/responsive.scss";
+
+
+.wedo-section {
+    margin-top: 150px;
+
+    .container {
+        .wedo-title {
+            width: 90%;
+            margin: 0 auto;
+            color: #F2BE64;
+            text-align: center;
+            font-family: Syne;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        .top-wedo-content {
+            margin-top: 70px;
+            display: flex;
+            justify-content: right;
+            // margin: 0 auto;
+            width: 100%;
+
+            .right {
+                width: 85%;
+                display: flex;
+                gap: 60px;
+
+                .card-wedo {
+                    width: 50%;
+                    height: 260px;
+                    // height: fit-content;
+                    margin: 0 auto 15px auto;
+                    position: relative;
+
+                    .text-30 {
+                        margin-bottom: 10px !important;
+                    }
+
+                    img {
+                        width: 520px;
+                        height: 100%;
+                    }
+
+                    .title-card {
+                        position: absolute;
+                        top: 30px;
+                        left: 120px;
+                        width: 380px;
+
+                        // transform: translateX(-50%);
+                        @media (max-width:1535px) {
+                            width: 380px;
+
+                            .para {
+                                height: 170px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+                        }
+
+                        .para {
+                            // height: 120px;
+                            // overflow: hidden;
+                            // display: -webkit-box;
+                            // -webkit-box-orient: vertical;
+                            // -webkit-line-clamp: 6;
+                        }
+
+                        p {
+                            margin-bottom: 10px;
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .bottom-wedo-content {
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: left;
+            width: 100%;
+
+            .left {
+                display: flex;
+                width: 85%;
+                gap: 60px;
+
+                .card-wedo {
+                    width: 50%;
+                    height: 260px;
+                    // height: fit-content;
+                    margin: 0 auto 15px auto;
+                    position: relative;
+
+                    .text-30 {
+                        margin-bottom: 10px !important;
+                    }
+
+                    img {
+                        width: 520px;
+                        height: 100%;
+                    }
+
+                    .title-card {
+                        position: absolute;
+                        top: 20px;
+                        // left: 61%;
+                        // transform: translateX(-50%);
+                        left: 140px;
+                        width: 370px;
+
+                        @media (max-width:1535px) {
+                            width: 300px;
+
+                            .para {
+                                height: 180px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+                        }
+
+                        .para {
+                            // height: 150px;
+                            // overflow: hidden;
+                            // display: -webkit-box;
+                            // -webkit-box-orient: vertical;
+                            // -webkit-line-clamp: 6;
+                        }
+
+                        p {
+                            margin-bottom: 5px;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include respond-to(phone) {
+
+    .wedo-section {
+        margin-top: 36px;
+
+        .container {
+            .wedo-title {
+                width: 90%;
+                margin: 0 auto;
+                color: #F2BE64;
+                text-align: center;
+                font-family: Syne;
+                font-size: 27px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            .top-wedo-content {
+                margin-top: 20px;
+                display: block;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 90%;
+
+                .right {
+                    display: block;
+                    width: 100%;
+
+                    .card-wedo {
+                        min-width: 288px;
+                        height: 150px;
+                        // height: fit-content;
+                        margin: 0 auto 10px auto;
+
+                        .text-30 {
+                            margin-bottom: 2px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 10px;
+                            left: 59%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 100px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .bottom-wedo-content {
+                margin-top: 20px;
+                display: block;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 90%;
+
+                .left {
+                    display: block;
+                    width: 100%;
+
+                    .card-wedo {
+                        min-width: 288px;
+                        height: 150px;
+                        // height: fit-content;
+                        margin: 0 auto 10px auto;
+
+                        .text-30 {
+                            margin-bottom: 2px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 10px;
+                            left: 61%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 100px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(phoneLandscape) {
+
+    .wedo-section {
+        margin-top: 36px;
+
+        .container {
+            .wedo-title {
+                width: 90%;
+                margin: 0 auto;
+                color: #F2BE64;
+                text-align: center;
+                font-family: Syne;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            .top-wedo-content {
+                margin-top: 20px;
+                display: block;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+
+                .right {
+                    display: block;
+                    width: 100%;
+
+                    .card-wedo {
+                        width: 90%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 5px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 20px;
+                            left: 59%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 155px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .bottom-wedo-content {
+                margin-top: 20px;
+                display: block;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+
+                .left {
+                    display: block;
+                    width: 100%;
+
+                    .card-wedo {
+                        width: 90%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 5px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 20px;
+                            left: 60%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 155px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(tablet) {
+
+    .wedo-section {
+        margin-top: 36px;
+
+        .container {
+            .wedo-title {
+                width: 90%;
+                margin: 0 auto;
+                color: #F2BE64;
+                text-align: center;
+                font-family: Syne;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            .top-wedo-content {
+                margin-top: 20px;
+                display: block;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+
+                .right {
+                    display: block;
+                    width: 100%;
+
+                    .card-wedo {
+                        width: 90%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 15px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 30px;
+                            left: 59%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                // height: 155px;
+                                // overflow: hidden;
+                                // display: -webkit-box;
+                                // -webkit-box-orient: vertical;
+                                // -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+
+                    .card-wedo {
+                        width: 90%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 15px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 30px;
+                            left: 59%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                // height: 155px;
+                                // overflow: hidden;
+                                // display: -webkit-box;
+                                // -webkit-box-orient: vertical;
+                                // -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .bottom-wedo-content {
+                margin-top: 20px;
+                display: block;
+                align-items: center;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+
+                .left {
+                    width: 100%;
+                    display: block;
+
+                    .card-wedo {
+                        width: 90%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 15px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 30px;
+                            left: 61%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                // height: 155px;
+                                // overflow: hidden;
+                                // display: -webkit-box;
+                                // -webkit-box-orient: vertical;
+                                // -webkit-line-clamp: 7;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to(laptop) {
+
+    .wedo-section {
+        margin-top: 36px;
+
+        .container {
+            .wedo-title {
+                width: 90%;
+                margin: 0 auto;
+                color: #F2BE64;
+                text-align: center;
+                font-family: Syne;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                margin-bottom: 20px;
+            }
+
+            .top-wedo-content {
+                margin-top: 40px;
+                display: flex;
+                justify-content: right;
+                // margin: 0 auto;
+                width: 100%;
+
+                .right {
+                    width: 95%;
+                    display: flex;
+                    gap: 40px;
+
+                    .card-wedo {
+                        width: 50%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 10px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 30px;
+                            left: 59%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 120px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 6;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .bottom-wedo-content {
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                justify-content: left;
+                // margin: 0 auto;
+                width: 100%;
+
+                .left {
+                    display: flex;
+                    width: 95%;
+                    gap: 40px;
+
+                    .card-wedo {
+                        width: 50%;
+                        height: 240px;
+                        // height: fit-content;
+                        margin: 0 auto 15px auto;
+
+                        .text-30 {
+                            margin-bottom: 10px !important;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .title-card {
+                            position: absolute;
+                            top: 20px;
+                            left: 61%;
+                            transform: translateX(-50%);
+                            width: 72%;
+
+                            .para {
+                                height: 150px;
+                                overflow: hidden;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 6;
+                            }
+
+                            p {
+                                margin-bottom: 5px;
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+}
