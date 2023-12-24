@@ -35,7 +35,7 @@ const Article = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://strapi-be-hg6l.onrender.com/api/categories?populate=*"
+        "https://3.106.127.44.nip.io/api/categories?populate=*"
       );
 
       return response.data;
@@ -181,7 +181,7 @@ const Article = () => {
                                     src={
                                       v?.attributes?.thumbnail?.data?.attributes
                                         ?.url
-                                        ? `https://strapi-be-hg6l.onrender.com${v?.attributes?.thumbnail?.data?.attributes?.url}`
+                                        ? `https://3.106.127.44.nip.io${v?.attributes?.thumbnail?.data?.attributes?.url}`
                                         : LayoutContent
                                     }
                                   />

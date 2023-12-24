@@ -11,7 +11,7 @@ const TrackRecord = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://strapi-be-hg6l.onrender.com/api/posts-alldays?filters[isTop][$eq]=true&populate=*"
+        "https://3.106.127.44.nip.io/api/posts-alldays?filters[isTop][$eq]=true&populate=*"
       );
 
       return response.data;
@@ -113,7 +113,7 @@ const TrackRecord = () => {
                               src={
                                 val?.attributes?.thumbnail?.data?.attributes
                                   ?.url
-                                  ? `https://strapi-be-hg6l.onrender.com${val?.attributes?.thumbnail?.data?.attributes?.url}`
+                                  ? `https://3.106.127.44.nip.io${val?.attributes?.thumbnail?.data?.attributes?.url}`
                                   : LayoutContent
                               }
                             />
